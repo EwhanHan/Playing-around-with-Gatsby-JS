@@ -1,11 +1,11 @@
 import * as React from 'react';
 import Layout from '../components/Layout/Layout';
-import { ExampleButton } from '../components/button';
-import styled from 'styled-components';
+import Images from '../Examples/Images';
 
 const IndexPage = () => (
   <Layout>
     <h1>Home Page</h1>
+    <Images />
   </Layout>
 );
 

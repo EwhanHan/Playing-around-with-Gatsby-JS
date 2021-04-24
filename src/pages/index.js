@@ -5,7 +5,6 @@ import Images from '../Examples/Images';
 const IndexPage = () => (
   <Layout>
     <h1>Home Page</h1>
-    <Images />
   </Layout>
 );
 

@@ -6,7 +6,6 @@ const contact = () => {
     <Layout>
       <main className='page'>
         <section className='contact-page'>
-          '
           <article className='contact-info'>
             <h3>Want To Get In Touch?</h3>
             <p>

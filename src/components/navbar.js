@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import { FiAlignJustify } from 'react-icons/fi';
 import logo from '../assets/images/logo.svg';
 
-const navbar = () => {
+const Navbar = () => {
+  const [show, setShow] = useState(false);
+
   return (
     <nav className='navbar'>
       <div className='nav-center'>
@@ -11,11 +13,11 @@ const navbar = () => {
           <Link to='/'>
             <img src={logo} alt='simply recipes' />
           </Link>
-          <button className='nav-btn'>
+          <button className='nav-btn' onClick={() => setShow(!show)}>
             <FiAlignJustify />
           </button>
         </div>
-        <div className='nav-links show-links'>
+        <div className={show ? 'nav-links show-links' : 'nav-links'}>
           <Link to='/' className='nav-link' activeClassName='active-link'>
             home
           </Link>
@@ -43,4 +45,4 @@ const navbar = () => {
   );
 };
 
-export default navbar;
+export default Navbar;

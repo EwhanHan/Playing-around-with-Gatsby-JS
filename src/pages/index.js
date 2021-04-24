@@ -4,7 +4,7 @@ import Layouts from "../components/Layouts"
 
 const IndexPage = () => (
   <Layouts>
-    <p>Welcome to your new Gatsby site.</p>
+    <h1 style={{ color: "red" }}>Home Page</h1>
     <p>Now go build something great.</p>
   </Layouts>
 )

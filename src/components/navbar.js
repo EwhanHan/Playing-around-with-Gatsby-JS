@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "gatsby"
-import * as styles from "./navbar.module.css"
+import React from 'react';
+import { Link } from 'gatsby';
+import * as styles from './navbar.module.css';
 
 const navbar = () => {
   return (
@@ -14,7 +14,7 @@ const navbar = () => {
         </li>
       </ul>
     </header>
-  )
-}
+  );
+};
 
-export default navbar
+export default navbar;

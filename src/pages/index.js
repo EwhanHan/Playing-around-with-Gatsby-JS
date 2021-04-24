@@ -1,7 +1,7 @@
-import * as React from "react"
-import Layout from "../components/Layout/Layout"
-import { ExampleButton } from "../components/button"
-import styled from "styled-components"
+import * as React from 'react';
+import Layout from '../components/Layout/Layout';
+import { ExampleButton } from '../components/button';
+import styled from 'styled-components';
 
 const IndexPage = () => (
   <Layout>
@@ -12,7 +12,7 @@ const IndexPage = () => (
       <ExampleButton> Testing </ExampleButton>
     </Wrapper>
   </Layout>
-)
+);
 
 const Wrapper = styled.section`
   color: purple;
@@ -28,6 +28,6 @@ const Wrapper = styled.section`
   .test {
     color: green;
   }
-`
+`;
 
-export default IndexPage
+export default IndexPage;

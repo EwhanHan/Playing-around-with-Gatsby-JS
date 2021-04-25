@@ -27,7 +27,7 @@ const ComponentName = () => {
     <div>
       <h2>{data.site.siteMetadata.person.name}</h2>
       {data.site.siteMetadata.simpleData.map(el => {
-        return <p>{el}</p>;
+        return <p key={Math.round(Math.random() * 100)}>{el}</p>;
       })}
     </div>
   );

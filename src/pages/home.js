@@ -3,6 +3,8 @@ import React from 'react';
 import Layout from '../components/Layout/Layout';
 import FetchData from '../Examples/fetchData';
 
+import QueryData from '../Examples/QueryData';
+
 const Home = () => {
   return (
     <Layout>
@@ -23,6 +25,7 @@ const Home = () => {
           </div>
         </header>
         <FetchData />
+        <QueryData />
       </main>
     </Layout>
   );

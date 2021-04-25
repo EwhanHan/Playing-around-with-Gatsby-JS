@@ -7,16 +7,18 @@ import styled from 'styled-components';
 const Gallery = () => {
   const data = useStaticQuery(query);
   const nodes = data.allFile.nodes;
+  console.log('Query data: ', data, '\nnodes: ', nodes);
   return (
     <Layout>
       <main className='page'>
         <Wrapper>
           {nodes.map((imageData, index) => {
             const { name } = imageData;
+            const pathToImage = getImage(imageData.childrenImageSharp[0]);
             return (
               <article key={index} className='gallery-item'>
                 <GatsbyImage
-                  image={imageData.childrenImageSharp[0].gatsbyImageData}
+                  image={pathToImage}
                   alt={name}
                   className='gallery-img'
                 />

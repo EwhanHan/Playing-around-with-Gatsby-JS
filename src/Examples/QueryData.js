@@ -7,7 +7,7 @@ const getSiteMetaData = graphql`
       siteMetadata {
         title
         description
-        author
+        aliasTest: author
         person {
           age
           name
@@ -26,10 +26,10 @@ const getSiteMetaData = graphql`
 const QueryData = () => {
   const {
     site: {
-      siteMetadata: { author },
+      siteMetadata: { aliasTest },
     },
   } = useStaticQuery(getSiteMetaData);
 
-  return <div>{author}</div>;
+  return <div>{aliasTest}</div>;
 };
 export default QueryData;

@@ -6,10 +6,10 @@ const RecipesList = ({ recipes = [] }) => {
   return (
     <div className='recipes-list'>
       {recipes.map(recipe => {
-        const { contentful_id, cookTime, title, image, prepTime } = recipe;
+        const { id, cookTime, title, image, prepTime } = recipe;
         const pathToImage = getImage(image);
         return (
-          <Link to={`/${title}`} className='recipe' key={contentful_id}>
+          <Link to={`/${title}`} className='recipe' key={id}>
             <GatsbyImage
               image={pathToImage}
               className='recipe-img'

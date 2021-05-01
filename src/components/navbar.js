@@ -18,7 +18,7 @@ const Navbar = () => {
           </button>
         </div>
         <div className={show ? 'nav-links show-links' : 'nav-links'}>
-          <Link to='/home' className='nav-link' activeClassName='active-link'>
+          <Link to='/' className='nav-link' activeClassName='active-link'>
             home
           </Link>
           <Link
